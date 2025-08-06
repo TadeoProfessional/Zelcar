@@ -23,7 +23,7 @@ public:
 	static inline FPrimaryAssetType WeaponType = FName(TEXT("WeaponData"));
 
 	virtual void StartInitialLoading() override;
-
+	
 	void LoadPotionAssets(FPotionDataLoadCompleteDelegate OnCompletedDelegate);
 	void LoadResourceAssets(FResourceDataLoadCompleteDelegate OnCompletedDelegate);
 	void LoadWeaponAssets(FWeaponDataLoadCompleteDelegate OnCompletedDelegate);
