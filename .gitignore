@@ -15,7 +15,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-# *.dll
+*.dll
 
 # Fortran module files
 *.mod
@@ -41,17 +41,10 @@
 *.sdf
 *.VC.db
 *.VC.opendb
-.vsconfig
-
-# Precompiled Assets
-SourceArt/**/*.png
-SourceArt/**/*.tga
 
 # Binary Files
-# Binaries/
-# Binaries/*
-Binaries/*/*.pdb
-Plugins/**/Binaries/*
+Binaries/*
+Plugins/*/Binaries/*
 
 # Builds
 Build/*
@@ -71,12 +64,15 @@ Build/*/**
 Saved/*
 
 # Compiled source files for the engine to use
-Intermediate/
 Intermediate/*
-Plugins/**/Intermediate/*
+Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-
-# Backup project
-MyProject/*
+.idea
+Plugins/Developer
+Builds
+Config/steamvr_ue_editor_app.json
+Config/SteamVRBindings
+Platforms/HoloLens/Config/HoloLensEngine.ini
+.vsconfig
